@@ -31,8 +31,8 @@ Join ( SELECT department_id, AVG(salary) AS avg_salary
         
 
 --Task FOUR
-Select city, COUNT(*) AS gold_customer_count
-From customers
-Where loyalty_level = 'Gold'
-Group BY city
-Order BY gold_customer_count DESC, city ASC;
+SELECT city, COUNT(*) AS gold_customer_count
+FROM customers
+WHERE loyalty_level = 'Gold'
+GROUP BY city
+ORDER BY gold_customer_count DESC, city ASC;
