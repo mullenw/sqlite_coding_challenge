@@ -18,16 +18,16 @@ Order BY revenue DESC;
 
 
 --Task THREE
-Select e.first_name || ' ' || e.last_name AS employee_name, d.name AS department_name, e.salary, dept.avg_salary AS department_avg_salary
-From employees e
-Join departments d ON d.id = e.department_id
-Join ( SELECT department_id, AVG(salary) AS avg_salary
+SELECT e.first_name || ' ' || e.last_name AS employee_name, d.name AS department_name, e.salary, dept.avg_salary AS department_avg_salary
+FROM employees e
+JOIN departments d ON d.id = e.department_id
+JOIN ( SELECT department_id, AVG(salary) AS avg_salary
        FROM employees
        GROUP BY department_id 
 ) dept
         ON dept.department_id = e.department_id
-        Where e.salary > dept.avg_salary
-        Order BY d.name, e.salary DESC;
+        WHERE e.salary > dept.avg_salary
+        ORDER BY d.name, e.salary DESC;
         
 
 --Task FOUR
