@@ -28,3 +28,11 @@ Join ( SELECT department_id, AVG(salary) AS avg_salary
         ON dept.department_id = e.department_id
         Where e.salary > dept.avg_salary
         Order BY d.name, e.salary DESC;
+        
+
+--Task FOUR
+Select city, COUNT(*) AS gold_customer_count
+From customers
+Where loyalty_level = 'Gold'
+Group BY city
+Order BY gold_customer_count DESC, city ASC;
