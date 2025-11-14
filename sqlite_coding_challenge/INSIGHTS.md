@@ -16,3 +16,5 @@ IT has the biggest salary gap, with Maya Bennett earning $112,000 compared to a 
 In Sales Alice Nguyen earns $72,000 vs. a $61,000 average. It seems like pay in this department is more consistent across the employees.
 
 Task 4 — Cities with the Most Loyal Customers
+Tampa is the only city that has Gold-tier loyalty customers with a total of four.
+The concentration in this area presents an opportunity to grow loyalty programs outside of Tampa. The company should look to expand high-value customer engagement in other cities as well.
