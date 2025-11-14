@@ -11,10 +11,10 @@ LIMIT 5;
 --Task TWO
 SELECT p.category, SUM(oi.quantity * oi.unit_price) AS revenue
 FROM products p
-Join order_items oi ON oi.product_id = p.id
-Join orders o ON o.id = oi.order_id
-Group BY p.category
-Order BY revenue DESC;
+JOIN order_items oi ON oi.product_id = p.id
+JOIN orders o ON o.id = oi.order_id
+GROUP BY p.category
+ORDER BY revenue DESC;
 
 
 --Task THREE
